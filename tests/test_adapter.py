@@ -4,7 +4,7 @@ import pytest
 from harlequin.adapter import HarlequinAdapter, HarlequinConnection, HarlequinCursor
 from harlequin.catalog import Catalog, CatalogItem
 from harlequin.exception import HarlequinConnectionError, HarlequinQueryError
-from harlequin_myadapter.adapter import MyAdapter, MyConnection
+from harlequin_adbc.adapter import MyAdapter, MyConnection
 from textual_fastdatatable.backend import create_backend
 
 if sys.version_info < (3, 10):

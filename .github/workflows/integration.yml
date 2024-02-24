@@ -72,3 +72,7 @@ jobs:
         with:
           name: Snapshot Report ${{ matrix.os }} ${{ matrix.py }}
           path: ./snapshot_report.html
+      - name: Stop FlightSQL and Postgres Server
+        shell: bash -l {0}
+        run: |
+          docker-compose down

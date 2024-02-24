@@ -24,7 +24,7 @@ with one of the driver extras:
 
 `pip install harlequin-adbc[snowflake]`
 
-### Using poetry 
+### Using poetry
 
 `poetry add harlequin-adbc`
 
@@ -56,14 +56,14 @@ Example usage:
 ## Usage and Configuration
 You can open Harlequin with the ADBC adapter by selecting it with the `-a` option and passing in a connection string. The format of the connection string will depend on the driver you are using. You will also need to provide either the `--driver-type` or the `--driver-path`.
 
-### Driver Type (preferred) 
-When you use the --driver-type option it will try to dynamically use the driver package of the type selected `adbc-driver-{driver type}`. That is why it's crucial to also have that package also install in the virtual environment where Harlequin is installed. 
+### Driver Type (preferred)
+When you use the --driver-type option it will try to dynamically use the driver package of the type selected `adbc-driver-{driver type}`. That is why it's crucial to also have that package also install in the virtual environment where Harlequin is installed.
 - `--driver-type` with one of the following options
   - flightsql, postgresql, snowflake, sqlite, duckdb
 
-### Driver Path 
+### Driver Path
 The other option is to pass the file path location of the adbc driver that you are using. Note this method is not well tested.
-- `--driver-path` 
+- `--driver-path`
 
 ### DB Kwargs String (Optional)
 Since the drivers implement so many different options to pass through when you connect to the database this is a way to pass through these options. The format of the string is key=value separated by ;
@@ -93,7 +93,7 @@ Example usage:
 
 `harlequin -P None -a adbc "grpc+tls://localhost:31337" --driver-type flightsql --db-kwargs-str "username=flight_username;password=flight_password;adbc.flight.sql.client_option.tls_skip_verify=true"`
 
-Check the [FlightSQL ADBC Driver Docs](https://arrow.apache.org/adbc/main/driver/flight_sql.html) for more details. 
+Check the [FlightSQL ADBC Driver Docs](https://arrow.apache.org/adbc/main/driver/flight_sql.html) for more details.
 
 ### Postgres Driver
 The Postgres URI should be in the format of a [Postgres DSN](https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING):
@@ -103,7 +103,7 @@ The Postgres URI should be in the format of a [Postgres DSN](https://www.postgre
 ### DuckDB and SQLite
 While DuckDB and SQLite both have ADBC drivers it's not recommend to use them. Harlequin natively supports both of the databases without having to install any other dependencies.
 
-## Know Issues 
+## Know Issues
 - Snowflake adbc driver seems to be the only driver that returns the `xdbc_data_type` from `adbc_get_objects()`
 - Snowflake adbc driver has a bug with `adbc_get_table_schema()` that returns `adbc_driver_manager.OperationalError: IO: sql: expected 12 destination arguments in Scan, not 11`
 - The PostgreSQL adbc driver is overall buggy and when executing queries you might get the error `IO: [libpq] Fetch header failed: no COPY in progress`

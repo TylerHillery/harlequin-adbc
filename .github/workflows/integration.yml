@@ -1,4 +1,4 @@
-name: Integration 
+name: Integration
 
 on:
   push:
@@ -30,10 +30,10 @@ jobs:
         uses: actions/checkout@v4
         with:
           persist-credentials: false
-      - name: Start FlightSQL and Postgres Server 
+      - name: Start FlightSQL and Postgres Server
         shell: bash -l {0}
         run: |
-          docker-compose up -d 
+          docker-compose up -d
       - name: Set up Python ${{ matrix.py }}
         id: setup-python
         uses: actions/setup-python@v5
@@ -67,7 +67,7 @@ jobs:
           source .venv/bin/activate
           pytest
       - name: Store snapshot report on failure
-        uses: actions/upload-artifact@v4  
+        uses: actions/upload-artifact@v4
         if: failure()
         with:
           name: Snapshot Report ${{ matrix.os }} ${{ matrix.py }}

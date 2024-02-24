@@ -1,17 +1,6 @@
 .PHONY: check
 check:
-	ruff format .
-	ruff . --fix
-	mypy
-	pytest
-
-.PHONY: init
-init:
-	docker-compose up -d
-
-.PHONY: clean
-clean:
-	docker-compose down
+	pre-commit run --all-files
 
 .PHONY: serve-postgres
 serve-postgres:
@@ -23,8 +12,8 @@ serve-flightsql:
 
 .PHONY: serve-snowflake
 serve-snowflake:
-	harlequin -P None -a adbc "$$SNOWFLAKE_URI" --driver-type snowflake
+	harlequin -P None -a adbc "$SNOWFLAKE_URI" --driver-type snowflake
 
-.PHONY: serve-config-error
-serve-config-error:
-	harlequin -P None -a adbc --driver-type snowflake
+.PHONY: serve-sqlite
+serve-sqlite:
+	harlequin -P None -a adbc ":memory:" --driver-type sqlite

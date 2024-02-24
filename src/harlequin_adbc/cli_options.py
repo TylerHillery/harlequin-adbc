@@ -8,7 +8,7 @@ driver_type = SelectOption(
     name="driver-type",
     description=("The driver database type"),
     choices=["flightsql", "postgresql", "snowflake", "sqlite", "duckdb"],
-    default=None
+    default=None,
 )
 
 driver_path = PathOption(
@@ -21,7 +21,7 @@ driver_path = PathOption(
     exists=False,
     file_okay=True,
     dir_okay=False,
-    default=None
+    default=None,
 )
 
 db_kwargs_str = TextOption(
@@ -30,7 +30,7 @@ db_kwargs_str = TextOption(
         "Database connection parameters as key=value pairs, separated by commas. "
         "Example: --db-kwargs 'username=flight_username,password=flight_password'"
     ),
-    default=None
+    default=None,
 )
 
 ADBC_OPTIONS = [driver_type, driver_path, db_kwargs_str]

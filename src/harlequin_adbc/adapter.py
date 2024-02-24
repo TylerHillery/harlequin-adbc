@@ -1,11 +1,10 @@
 from __future__ import annotations
 
 import importlib
-import logging
 from typing import Any, Sequence
 
 import duckdb
-import pyarrow
+import pyarrow  # type:ignore
 from harlequin import (
     HarlequinAdapter,
     HarlequinConnection,
@@ -20,12 +19,6 @@ from harlequin.exception import (
 from textual_fastdatatable.backend import AutoBackendType
 
 from harlequin_adbc.cli_options import ADBC_OPTIONS
-
-logging.basicConfig(
-    filename="harlequin_adbc_connection.log",
-    level=logging.INFO,
-    format="%(asctime)s:%(levelname)s:%(message)s",
-)
 
 
 class HarlequinAdbcCursor(HarlequinCursor):
@@ -94,9 +87,10 @@ class HarlequinAdbcConnection(HarlequinConnection):
         conn_str: Sequence[str],
         driver_path: str | None = None,
         driver_type: str | None = None,
-        *_: any,
+        *_: Any,
         init_message: str = "",
         options: dict[str, Any],
+        **__: Any,
     ) -> None:
         self.init_message = init_message
         connect_kwargs = {}
@@ -133,7 +127,6 @@ class HarlequinAdbcConnection(HarlequinConnection):
             cur = self.conn.cursor()
             cur.execute(query)
         except Exception as e:
-            cur.close()
             raise HarlequinQueryError(
                 msg=str(e),
                 title="Harlequin encountered an error while executing your query.",
@@ -142,7 +135,6 @@ class HarlequinAdbcConnection(HarlequinConnection):
             if cur.description is not None:
                 return HarlequinAdbcCursor(cur)
             else:
-                cur.close()
                 return None
 
     def get_catalog(self) -> Catalog:
@@ -219,7 +211,7 @@ class HarlequinAdbcAdapter(HarlequinAdapter):
         db_kwargs_str: str | None = None,
         **_: Any,
     ) -> None:
-        self.conn_str = conn_str 
+        self.conn_str = conn_str
         self.driver_path = driver_path
         self.driver_type = driver_type
         if len(self.conn_str) != 1:

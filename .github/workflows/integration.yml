@@ -1,8 +1,6 @@
 name: Integration
 
 on:
-  push:
-    branches: [ main ]
   pull_request:
 
 # will cancel previous workflows triggered by the same event and for the same ref for PRs or same SHA otherwise

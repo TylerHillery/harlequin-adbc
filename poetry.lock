@@ -2,16 +2,16 @@
 
 [[package]]
 name = "adbc-driver-flightsql"
-version = "0.9.0"
+version = "0.10.0"
 description = "An ADBC driver for working with Apache Arrow Flight SQL."
 optional = true
 python-versions = ">=3.9"
 files = [
-    {file = "adbc_driver_flightsql-0.9.0-py3-none-macosx_10_9_x86_64.whl", hash = "sha256:9a50e86b18c28f2fa19b2762af2acabf63c8a86eff24d8658572acf840ac8cb5"},
-    {file = "adbc_driver_flightsql-0.9.0-py3-none-macosx_11_0_arm64.whl", hash = "sha256:6537ed860b47f38a8344ecc62f55f70bb3d2ddf2edd5662f7e8b569312eecc9a"},
-    {file = "adbc_driver_flightsql-0.9.0-py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:dcd93c153c5758b4e7b3ffafd8f6c376194f37ca344b75f592a137ddd6ca43a4"},
-    {file = "adbc_driver_flightsql-0.9.0-py3-none-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:d4fc2eb771b4502c7e14779eb119607657d7aa8518fa856c20c381ebc11986b4"},
-    {file = "adbc_driver_flightsql-0.9.0-py3-none-win_amd64.whl", hash = "sha256:223860dbf328def61638bb4baed79b66aa7f88cf600fa960d77be82584ff0acb"},
+    {file = "adbc_driver_flightsql-0.10.0-py3-none-macosx_10_9_x86_64.whl", hash = "sha256:7b113b8c42f860d7d5cf97f537c6492792705d7fb349ef54fdb7909f49bdbab1"},
+    {file = "adbc_driver_flightsql-0.10.0-py3-none-macosx_11_0_arm64.whl", hash = "sha256:263789d0e266886a07b80db69dc4fbe241a2a087921d0803b0ca9cce6f4bada7"},
+    {file = "adbc_driver_flightsql-0.10.0-py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:666d7be8a85d59c0671cd125880fee75558af6c5ee2e53cd04576584d82f543b"},
+    {file = "adbc_driver_flightsql-0.10.0-py3-none-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:89ece8a93be51ec897404965ae63c3f5cf5627d3ed70d4f8d511a76dd35b456e"},
+    {file = "adbc_driver_flightsql-0.10.0-py3-none-win_amd64.whl", hash = "sha256:34840e83aef5db77822287011140e765297b5152dbfa455a78e92249795241c5"},
 ]
 
 [package.dependencies]
@@ -23,32 +23,35 @@ test = ["pandas", "protobuf", "pyarrow (>=8.0.0)", "pytest"]
 
 [[package]]
 name = "adbc-driver-manager"
-version = "0.9.0"
+version = "0.10.0"
 description = "A generic entrypoint for ADBC drivers."
 optional = false
 python-versions = ">=3.9"
 files = [
-    {file = "adbc_driver_manager-0.9.0-cp310-cp310-macosx_10_15_x86_64.whl", hash = "sha256:9c7ee38855d4b4ebd6c83f14ab1b44bb8dc47173cb26f165a3d7b3a7a5dc39b6"},
-    {file = "adbc_driver_manager-0.9.0-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:e67781edb19f1b76d06a1aa099987a801b5e4298842acac1b0f123934ac7e180"},
-    {file = "adbc_driver_manager-0.9.0-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:58921cc1c82e1583f5faa5f65d6bc5e18a0428dd837db2a039cfa90f6c411cdf"},
-    {file = "adbc_driver_manager-0.9.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:7adca37f8e4a0bb164c3c43b603013f85df30a75bbdf3329c15fa4ae463736c0"},
-    {file = "adbc_driver_manager-0.9.0-cp310-cp310-win_amd64.whl", hash = "sha256:ec4e49ae23fb4b8f8938d78bcca262722fdf78799b114928fda80bba8dada541"},
-    {file = "adbc_driver_manager-0.9.0-cp311-cp311-macosx_10_15_x86_64.whl", hash = "sha256:638e5bdbb86abc1745679ed350266394d1478d53628a3f06d69a7778a280201d"},
-    {file = "adbc_driver_manager-0.9.0-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:33380cebfe909e78ad7a47faf0d204541e8640ac479ebe3e2dc4e152bc68dc51"},
-    {file = "adbc_driver_manager-0.9.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:95f29b7fa75ddebe34406a28f23df0ffe2ff861bd4d1a2c916ca46946e344d5b"},
-    {file = "adbc_driver_manager-0.9.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:4f38e098b0d02d03e6c1c612167ad2e589141f6ee6c513ef1321edac90bf66f2"},
-    {file = "adbc_driver_manager-0.9.0-cp311-cp311-win_amd64.whl", hash = "sha256:dcdc7fbe1bb91be61a53cf6693ed70d2018e66cc520eaa4e57f1b425260a4ff4"},
-    {file = "adbc_driver_manager-0.9.0-cp312-cp312-macosx_10_15_x86_64.whl", hash = "sha256:31e508b908f3b5c9183beb3b3528ff936f7429b82271346718d2be06103093ba"},
-    {file = "adbc_driver_manager-0.9.0-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:7b2d6137025dc2aaa1a03777c25107d98f5d904c9edf18d6ed743c89bf89a0a4"},
-    {file = "adbc_driver_manager-0.9.0-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:1f2de9536954881f0b6b7211742b54d4ce02c8b86b011de840a96948cdde4668"},
-    {file = "adbc_driver_manager-0.9.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:70b4cecbf4196fe06e6f8d6bcaddbff56f8e8dfd95b3443c2640de7d9c19d2f0"},
-    {file = "adbc_driver_manager-0.9.0-cp312-cp312-win_amd64.whl", hash = "sha256:7c3e589f70830887523607aa93dcb01a822dbdb63d55cc8fed54f5da53174e4b"},
-    {file = "adbc_driver_manager-0.9.0-cp39-cp39-macosx_10_15_x86_64.whl", hash = "sha256:52e96957f08723b28b37b52084c6fb9d61251144cfab30645563c5f60db5b6a1"},
-    {file = "adbc_driver_manager-0.9.0-cp39-cp39-macosx_11_0_arm64.whl", hash = "sha256:9fd41d26d60f2189543d32b1484f99d89285da345c6552ce85e820402fe2ca9e"},
-    {file = "adbc_driver_manager-0.9.0-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:2feb0290058b553b454b9bf145cc262cc29c4f18f076058a219ceeb95f5f505a"},
-    {file = "adbc_driver_manager-0.9.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:3ab7cd84d2dc5574eae03d0e8f713b3eb75c929cb01fae80bf877ee06cc3ef86"},
-    {file = "adbc_driver_manager-0.9.0-cp39-cp39-win_amd64.whl", hash = "sha256:5fe5d9ee9eb382da378d727052a685b6196c587df75964f29d8bd0b46e1fd63e"},
+    {file = "adbc_driver_manager-0.10.0-cp310-cp310-macosx_10_15_x86_64.whl", hash = "sha256:d2b6800fdf26920b50497b11c3af9069974d2e5d066db35ff35f83d30842ea55"},
+    {file = "adbc_driver_manager-0.10.0-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:7750cd791ba0b4f5bcd1c8cb73a8be4783f3857932562067ee928650ecb6bbe8"},
+    {file = "adbc_driver_manager-0.10.0-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:f5e6dc4f860a2486580f5346bd41faeff9d2f0e80a69fe15234242a12e1f4e06"},
+    {file = "adbc_driver_manager-0.10.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:259ff9e28273de0395def083b9241b808ccf7c9e8ff4c4144892c6b2f035bcc3"},
+    {file = "adbc_driver_manager-0.10.0-cp310-cp310-win_amd64.whl", hash = "sha256:43e304558acee50d3465171c427604cf84638b9b246166f05f5352001636f936"},
+    {file = "adbc_driver_manager-0.10.0-cp311-cp311-macosx_10_15_x86_64.whl", hash = "sha256:85ba7c47fa08ba4ac76b83d420f6d3a7ffc569a03c45818309c5cc4f99a1fb7b"},
+    {file = "adbc_driver_manager-0.10.0-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:81bd09520ba8f5cf533e16e11ac239fcbebd415763e5e2f28743d21a6b2c4d34"},
+    {file = "adbc_driver_manager-0.10.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:f047c443abaf79fcb0a623ef78a18c8d819f34f14c3214ecd69058529be0a111"},
+    {file = "adbc_driver_manager-0.10.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:0a5351ae521ebddc2753e45a73d82023c6fd919b7c92ae726637806e8ba70946"},
+    {file = "adbc_driver_manager-0.10.0-cp311-cp311-win_amd64.whl", hash = "sha256:1f8b72efa7204082121bdec39c247906b9aea1d85db4fcd26fec9af64b8fb27b"},
+    {file = "adbc_driver_manager-0.10.0-cp312-cp312-macosx_10_15_x86_64.whl", hash = "sha256:2067b324930494d826b9b29105f34fa7f808e9645dafe923da3adcfe9cf5bb30"},
+    {file = "adbc_driver_manager-0.10.0-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:b08e9c7ce796fe36ddd44612531f6f7744c42698eabba301f08a98cd690087b8"},
+    {file = "adbc_driver_manager-0.10.0-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:272e77f78181be69c62ba4373c87370268210208fb8f999118c1ad25a59126eb"},
+    {file = "adbc_driver_manager-0.10.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:63a6a625cbf4273d593c66fe670fcd3a1833827fec7a4808426eddf0e91ba45a"},
+    {file = "adbc_driver_manager-0.10.0-cp312-cp312-win_amd64.whl", hash = "sha256:ed5237a22fbfc9eef4faa03fd58d3856f8cabd80fc6743a1ab7560d11a3ccb1b"},
+    {file = "adbc_driver_manager-0.10.0-cp39-cp39-macosx_10_15_x86_64.whl", hash = "sha256:7a7a7c8a1c0d2cdd9990d1b82a615f7f8d80cb7073e5c559c1a5622870f24337"},
+    {file = "adbc_driver_manager-0.10.0-cp39-cp39-macosx_11_0_arm64.whl", hash = "sha256:c2749953d3853255c099f56e7c821ffa41c28a384cbc2ae10ae59583c5265b44"},
+    {file = "adbc_driver_manager-0.10.0-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:479ef698234a99f5f055da20624565f3220833fa98d983d4405b7d066b6099d8"},
+    {file = "adbc_driver_manager-0.10.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:51717875f2fbd37527b669af3d315d6cec72ab6101eab4aeb32ad37f655ad8d0"},
+    {file = "adbc_driver_manager-0.10.0-cp39-cp39-win_amd64.whl", hash = "sha256:5534d1be787d91de961e55ea491c3d14ba14bd72a5325127b49319cc4261c1f5"},
 ]
+
+[package.dependencies]
+typing-extensions = "*"
 
 [package.extras]
 dbapi = ["pandas", "pyarrow (>=8.0.0)"]
@@ -56,16 +59,16 @@ test = ["duckdb", "pandas", "pyarrow (>=8.0.0)", "pytest"]
 
 [[package]]
 name = "adbc-driver-postgresql"
-version = "0.9.0"
+version = "0.10.0"
 description = "A libpq-based ADBC driver for working with PostgreSQL."
 optional = true
 python-versions = ">=3.9"
 files = [
-    {file = "adbc_driver_postgresql-0.9.0-py3-none-macosx_10_9_x86_64.whl", hash = "sha256:1241c8e2659fe5d5025a3ccda8b68a131badc4bafbed3056c50a5b8d765c0e9c"},
-    {file = "adbc_driver_postgresql-0.9.0-py3-none-macosx_11_0_arm64.whl", hash = "sha256:070f671b763ab63fa32d26bc9663b9f007de5c9d6b6aa316d80988e089bd325c"},
-    {file = "adbc_driver_postgresql-0.9.0-py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:e3b518e4feedcd6ddf47868629d66051e5ceb26aa89167e56ab5a6e07db488e9"},
-    {file = "adbc_driver_postgresql-0.9.0-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:d308858dd45cd581d6751a3a824f343ff7abec41d4c1fe60acbabcf5d27ca696"},
-    {file = "adbc_driver_postgresql-0.9.0-py3-none-win_amd64.whl", hash = "sha256:79365162970e9d15f43d189ebf25a1bcfac6c492d2957bd722750a0ad3943de6"},
+    {file = "adbc_driver_postgresql-0.10.0-py3-none-macosx_10_9_x86_64.whl", hash = "sha256:727fc6852bd504deda6a03c6b77aa1a788ba9485012f043fd9b647476f9c0501"},
+    {file = "adbc_driver_postgresql-0.10.0-py3-none-macosx_11_0_arm64.whl", hash = "sha256:9cc41c581c1c13899ff92c196ce23bc8287cb069524271d60bedeabb824a89b2"},
+    {file = "adbc_driver_postgresql-0.10.0-py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:6bcd69ce87186bd827c9f9f459af0523d5cf14a135ea28baf313d5a9c8749fd8"},
+    {file = "adbc_driver_postgresql-0.10.0-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:28baf681f539fbaa9f6b192a69025b5b4f218c5172c8fc8e27fd3a4570aeda71"},
+    {file = "adbc_driver_postgresql-0.10.0-py3-none-win_amd64.whl", hash = "sha256:1bea75ced7d0bfa0672ebfc0fd051246d728a3dc77b5d2f8cdd9d4980541b904"},
 ]
 
 [package.dependencies]
@@ -77,16 +80,16 @@ test = ["pandas", "polars", "pyarrow (>=8.0.0)", "pytest"]
 
 [[package]]
 name = "adbc-driver-snowflake"
-version = "0.9.0"
+version = "0.10.0"
 description = "An ADBC driver for working with Snowflake."
 optional = true
 python-versions = ">=3.9"
 files = [
-    {file = "adbc_driver_snowflake-0.9.0-py3-none-macosx_10_9_x86_64.whl", hash = "sha256:c8d690689703b807514dec1604bbcbd6bce2cea65896e1bc1a926e3eb329d423"},
-    {file = "adbc_driver_snowflake-0.9.0-py3-none-macosx_11_0_arm64.whl", hash = "sha256:743be387cbfbc6740ad1238c9b0ad2ce161e01d50459e5520aed62f710a7c7da"},
-    {file = "adbc_driver_snowflake-0.9.0-py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:de49c0ecfb60c2fabb441ee47fa886707e4fe963d08c6e373bc4d1020b4b904b"},
-    {file = "adbc_driver_snowflake-0.9.0-py3-none-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:2e4a51deb57b0968e34a84cd5558df019ab6d20a8b98c87aab014ab3a7bfd779"},
-    {file = "adbc_driver_snowflake-0.9.0-py3-none-win_amd64.whl", hash = "sha256:94c5ce7cc76ff395d4968d8274d888977484e16fed5eca6fbcd40ab2d42ef647"},
+    {file = "adbc_driver_snowflake-0.10.0-py3-none-macosx_10_9_x86_64.whl", hash = "sha256:c866fe65be3e16fb0c43e134dd2f17519dfe93c762968941047d6a27faa4b983"},
+    {file = "adbc_driver_snowflake-0.10.0-py3-none-macosx_11_0_arm64.whl", hash = "sha256:5332ca08dd1ec57c283a15f94d18b093d481def9f56bceb402067197d297cb3a"},
+    {file = "adbc_driver_snowflake-0.10.0-py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:7376e9a54703109e17e2389780cbd8ebd80cf7ad236d2da1e9207e1614cc4805"},
+    {file = "adbc_driver_snowflake-0.10.0-py3-none-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:a0f5eba0e2a114265f940a7e29955848e94b3e35e3492087984954e5fb89f1ab"},
+    {file = "adbc_driver_snowflake-0.10.0-py3-none-win_amd64.whl", hash = "sha256:5f24e5fba2d7821ddf2fbc47c114b6585e04c202b2d7aba19336c2658b1f0805"},
 ]
 
 [package.dependencies]
@@ -98,16 +101,16 @@ test = ["pandas", "pyarrow (>=8.0.0)", "pytest"]
 
 [[package]]
 name = "adbc-driver-sqlite"
-version = "0.9.0"
+version = "0.10.0"
 description = "An ADBC driver for working with SQLite."
 optional = true
 python-versions = ">=3.9"
 files = [
-    {file = "adbc_driver_sqlite-0.9.0-py3-none-macosx_10_9_x86_64.whl", hash = "sha256:da62a80e642088fb43f4d69265e58c8dfcd9b38548814d643d63f2e59346a4f3"},
-    {file = "adbc_driver_sqlite-0.9.0-py3-none-macosx_11_0_arm64.whl", hash = "sha256:9a150c28b9e37f8f9ee16271179905cfc485f662eb936351e8b6c3149ea2152c"},
-    {file = "adbc_driver_sqlite-0.9.0-py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:24782431d415914930366b1c717a2629bb9e9892eac2bf051c065a2d954e3a27"},
-    {file = "adbc_driver_sqlite-0.9.0-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:905de41658f7567f0919e5aa34d1e3261f8a802212c46f06a6b767ba7f07277e"},
-    {file = "adbc_driver_sqlite-0.9.0-py3-none-win_amd64.whl", hash = "sha256:eb6cd9dc71631bcee474a18191b6f61b060d1af5ea7974886858a29f6dc1e4b2"},
+    {file = "adbc_driver_sqlite-0.10.0-py3-none-macosx_10_9_x86_64.whl", hash = "sha256:d3e552aff125600e6d1c0e91cd5dddf337b34ca1b86eb3be20db4a2cd7334d59"},
+    {file = "adbc_driver_sqlite-0.10.0-py3-none-macosx_11_0_arm64.whl", hash = "sha256:1396d83aee72593dd975181feb258f7225ef4c1cbd68c59ce7924e215de8f1f7"},
+    {file = "adbc_driver_sqlite-0.10.0-py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:b506902bdf60a0a09ca5f178d39d5bdf3a69679c917144c755b45b32ed7fa672"},
+    {file = "adbc_driver_sqlite-0.10.0-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:a67b518c380f8b490c6aab2d90006dfa285941128172393effb3a58c73304d34"},
+    {file = "adbc_driver_sqlite-0.10.0-py3-none-win_amd64.whl", hash = "sha256:7727da4b1352b3bce846e0b6d0486be8949a32ef473179edc9050f7ac03d6d77"},
 ]
 
 [package.dependencies]
@@ -252,13 +255,13 @@ typing = ["typing-extensions (>=4.8)"]
 
 [[package]]
 name = "harlequin"
-version = "1.15.0"
+version = "1.16.0"
 description = "The SQL IDE for Your Terminal."
 optional = false
 python-versions = ">=3.8.1,<4.0.0"
 files = [
-    {file = "harlequin-1.15.0-py3-none-any.whl", hash = "sha256:d5bd690a90d571e18fe60373f33bb32c8470fb3d5fc981577a5e6ee69209d3f2"},
-    {file = "harlequin-1.15.0.tar.gz", hash = "sha256:36b289eb58562085997b579a2cd41f60d31b6d81f9dcd048e82c0de0dccb139a"},
+    {file = "harlequin-1.16.0-py3-none-any.whl", hash = "sha256:b803c21195ec60e5af8b2254cfbec3b7196312687d48786e80c562bd14f83f06"},
+    {file = "harlequin-1.16.0.tar.gz", hash = "sha256:8d2b70ef13c6d4a5af9fb3157917fb273847b598cf2b3f0042f29ec06c66c882"},
 ]
 
 [package.dependencies]
@@ -286,13 +289,13 @@ trino = ["harlequin-trino (>=0.1,<0.2)"]
 
 [[package]]
 name = "identify"
-version = "2.5.34"
+version = "2.5.35"
 description = "File identification library for Python"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "identify-2.5.34-py2.py3-none-any.whl", hash = "sha256:a4316013779e433d08b96e5eabb7f641e6c7942e4ab5d4c509ebd2e7a8994aed"},
-    {file = "identify-2.5.34.tar.gz", hash = "sha256:ee17bc9d499899bc9eaec1ac7bf2dc9eedd480db9d88b96d123d3b64a9d34f5d"},
+    {file = "identify-2.5.35-py2.py3-none-any.whl", hash = "sha256:c4de0081837b211594f8e877a6b4fad7ca32bbfc1a9307fdd61c28bfe923f13e"},
+    {file = "identify-2.5.35.tar.gz", hash = "sha256:10a7ca245cfcd756a554a7288159f72ff105ad233c7c4b9c6f0f4d108f5f6791"},
 ]
 
 [package.extras]
@@ -650,13 +653,13 @@ testing = ["pytest", "pytest-benchmark"]
 
 [[package]]
 name = "pre-commit"
-version = "3.6.1"
+version = "3.6.2"
 description = "A framework for managing and maintaining multi-language pre-commit hooks."
 optional = false
 python-versions = ">=3.9"
 files = [
-    {file = "pre_commit-3.6.1-py2.py3-none-any.whl", hash = "sha256:9fe989afcf095d2c4796ce7c553cf28d4d4a9b9346de3cda079bcf40748454a4"},
-    {file = "pre_commit-3.6.1.tar.gz", hash = "sha256:c90961d8aa706f75d60935aba09469a6b0bcb8345f127c3fbee4bdc5f114cf4b"},
+    {file = "pre_commit-3.6.2-py2.py3-none-any.whl", hash = "sha256:ba637c2d7a670c10daedc059f5c49b5bd0aadbccfcd7ec15592cf9665117532c"},
+    {file = "pre_commit-3.6.2.tar.gz", hash = "sha256:c3ef34f463045c88658c5b99f38c1e297abdcc0ff13f98d3370055fbbfabc67e"},
 ]
 
 [package.dependencies]
@@ -755,13 +758,13 @@ files = [
 
 [[package]]
 name = "pytest"
-version = "7.4.4"
+version = "8.0.1"
 description = "pytest: simple powerful testing with Python"
 optional = false
-python-versions = ">=3.7"
+python-versions = ">=3.8"
 files = [
-    {file = "pytest-7.4.4-py3-none-any.whl", hash = "sha256:b090cdf5ed60bf4c45261be03239c2c1c22df034fbffe691abe93cd80cea01d8"},
-    {file = "pytest-7.4.4.tar.gz", hash = "sha256:2cf0005922c6ace4a3e2ec8b4080eb0d9753fdc93107415332f50ce9e7994280"},
+    {file = "pytest-8.0.1-py3-none-any.whl", hash = "sha256:3e4f16fe1c0a9dc9d9389161c127c3edc5d810c38d6793042fb81d9f48a59fca"},
+    {file = "pytest-8.0.1.tar.gz", hash = "sha256:267f6563751877d772019b13aacbe4e860d73fe8f651f28112e9ac37de7513ae"},
 ]
 
 [package.dependencies]
@@ -769,7 +772,7 @@ colorama = {version = "*", markers = "sys_platform == \"win32\""}
 exceptiongroup = {version = ">=1.0.0rc8", markers = "python_version < \"3.11\""}
 iniconfig = "*"
 packaging = "*"
-pluggy = ">=0.12,<2.0"
+pluggy = ">=1.3.0,<2.0"
 tomli = {version = ">=1.0.0", markers = "python_version < \"3.11\""}
 
 [package.extras]
@@ -888,45 +891,45 @@ dev = ["flake8", "flake8-docstrings", "mypy", "packaging", "pre-commit", "pytest
 
 [[package]]
 name = "ruff"
-version = "0.1.15"
+version = "0.2.2"
 description = "An extremely fast Python linter and code formatter, written in Rust."
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "ruff-0.1.15-py3-none-macosx_10_12_x86_64.macosx_11_0_arm64.macosx_10_12_universal2.whl", hash = "sha256:5fe8d54df166ecc24106db7dd6a68d44852d14eb0729ea4672bb4d96c320b7df"},
-    {file = "ruff-0.1.15-py3-none-macosx_10_12_x86_64.whl", hash = "sha256:6f0bfbb53c4b4de117ac4d6ddfd33aa5fc31beeaa21d23c45c6dd249faf9126f"},
-    {file = "ruff-0.1.15-py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:e0d432aec35bfc0d800d4f70eba26e23a352386be3a6cf157083d18f6f5881c8"},
-    {file = "ruff-0.1.15-py3-none-manylinux_2_17_armv7l.manylinux2014_armv7l.whl", hash = "sha256:9405fa9ac0e97f35aaddf185a1be194a589424b8713e3b97b762336ec79ff807"},
-    {file = "ruff-0.1.15-py3-none-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:c66ec24fe36841636e814b8f90f572a8c0cb0e54d8b5c2d0e300d28a0d7bffec"},
-    {file = "ruff-0.1.15-py3-none-manylinux_2_17_ppc64.manylinux2014_ppc64.whl", hash = "sha256:6f8ad828f01e8dd32cc58bc28375150171d198491fc901f6f98d2a39ba8e3ff5"},
-    {file = "ruff-0.1.15-py3-none-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:86811954eec63e9ea162af0ffa9f8d09088bab51b7438e8b6488b9401863c25e"},
-    {file = "ruff-0.1.15-py3-none-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:fd4025ac5e87d9b80e1f300207eb2fd099ff8200fa2320d7dc066a3f4622dc6b"},
-    {file = "ruff-0.1.15-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:b17b93c02cdb6aeb696effecea1095ac93f3884a49a554a9afa76bb125c114c1"},
-    {file = "ruff-0.1.15-py3-none-musllinux_1_2_aarch64.whl", hash = "sha256:ddb87643be40f034e97e97f5bc2ef7ce39de20e34608f3f829db727a93fb82c5"},
-    {file = "ruff-0.1.15-py3-none-musllinux_1_2_armv7l.whl", hash = "sha256:abf4822129ed3a5ce54383d5f0e964e7fef74a41e48eb1dfad404151efc130a2"},
-    {file = "ruff-0.1.15-py3-none-musllinux_1_2_i686.whl", hash = "sha256:6c629cf64bacfd136c07c78ac10a54578ec9d1bd2a9d395efbee0935868bf852"},
-    {file = "ruff-0.1.15-py3-none-musllinux_1_2_x86_64.whl", hash = "sha256:1bab866aafb53da39c2cadfb8e1c4550ac5340bb40300083eb8967ba25481447"},
-    {file = "ruff-0.1.15-py3-none-win32.whl", hash = "sha256:2417e1cb6e2068389b07e6fa74c306b2810fe3ee3476d5b8a96616633f40d14f"},
-    {file = "ruff-0.1.15-py3-none-win_amd64.whl", hash = "sha256:3837ac73d869efc4182d9036b1405ef4c73d9b1f88da2413875e34e0d6919587"},
-    {file = "ruff-0.1.15-py3-none-win_arm64.whl", hash = "sha256:9a933dfb1c14ec7a33cceb1e49ec4a16b51ce3c20fd42663198746efc0427360"},
-    {file = "ruff-0.1.15.tar.gz", hash = "sha256:f6dfa8c1b21c913c326919056c390966648b680966febcb796cc9d1aaab8564e"},
+    {file = "ruff-0.2.2-py3-none-macosx_10_12_x86_64.macosx_11_0_arm64.macosx_10_12_universal2.whl", hash = "sha256:0a9efb032855ffb3c21f6405751d5e147b0c6b631e3ca3f6b20f917572b97eb6"},
+    {file = "ruff-0.2.2-py3-none-macosx_10_12_x86_64.whl", hash = "sha256:d450b7fbff85913f866a5384d8912710936e2b96da74541c82c1b458472ddb39"},
+    {file = "ruff-0.2.2-py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:ecd46e3106850a5c26aee114e562c329f9a1fbe9e4821b008c4404f64ff9ce73"},
+    {file = "ruff-0.2.2-py3-none-manylinux_2_17_armv7l.manylinux2014_armv7l.whl", hash = "sha256:5e22676a5b875bd72acd3d11d5fa9075d3a5f53b877fe7b4793e4673499318ba"},
+    {file = "ruff-0.2.2-py3-none-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:1695700d1e25a99d28f7a1636d85bafcc5030bba9d0578c0781ba1790dbcf51c"},
+    {file = "ruff-0.2.2-py3-none-manylinux_2_17_ppc64.manylinux2014_ppc64.whl", hash = "sha256:b0c232af3d0bd8f521806223723456ffebf8e323bd1e4e82b0befb20ba18388e"},
+    {file = "ruff-0.2.2-py3-none-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:f63d96494eeec2fc70d909393bcd76c69f35334cdbd9e20d089fb3f0640216ca"},
+    {file = "ruff-0.2.2-py3-none-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:6a61ea0ff048e06de273b2e45bd72629f470f5da8f71daf09fe481278b175001"},
+    {file = "ruff-0.2.2-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:5e1439c8f407e4f356470e54cdecdca1bd5439a0673792dbe34a2b0a551a2fe3"},
+    {file = "ruff-0.2.2-py3-none-musllinux_1_2_aarch64.whl", hash = "sha256:940de32dc8853eba0f67f7198b3e79bc6ba95c2edbfdfac2144c8235114d6726"},
+    {file = "ruff-0.2.2-py3-none-musllinux_1_2_armv7l.whl", hash = "sha256:0c126da55c38dd917621552ab430213bdb3273bb10ddb67bc4b761989210eb6e"},
+    {file = "ruff-0.2.2-py3-none-musllinux_1_2_i686.whl", hash = "sha256:3b65494f7e4bed2e74110dac1f0d17dc8e1f42faaa784e7c58a98e335ec83d7e"},
+    {file = "ruff-0.2.2-py3-none-musllinux_1_2_x86_64.whl", hash = "sha256:1ec49be4fe6ddac0503833f3ed8930528e26d1e60ad35c2446da372d16651ce9"},
+    {file = "ruff-0.2.2-py3-none-win32.whl", hash = "sha256:d920499b576f6c68295bc04e7b17b6544d9d05f196bb3aac4358792ef6f34325"},
+    {file = "ruff-0.2.2-py3-none-win_amd64.whl", hash = "sha256:cc9a91ae137d687f43a44c900e5d95e9617cb37d4c989e462980ba27039d239d"},
+    {file = "ruff-0.2.2-py3-none-win_arm64.whl", hash = "sha256:c9d15fc41e6054bfc7200478720570078f0b41c9ae4f010bcc16bd6f4d1aacdd"},
+    {file = "ruff-0.2.2.tar.gz", hash = "sha256:e62ed7f36b3068a30ba39193a14274cd706bc486fad521276458022f7bccb31d"},
 ]
 
 [[package]]
 name = "setuptools"
-version = "69.1.0"
+version = "69.1.1"
 description = "Easily download, build, install, upgrade, and uninstall Python packages"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "setuptools-69.1.0-py3-none-any.whl", hash = "sha256:c054629b81b946d63a9c6e732bc8b2513a7c3ea645f11d0139a2191d735c60c6"},
-    {file = "setuptools-69.1.0.tar.gz", hash = "sha256:850894c4195f09c4ed30dba56213bf7c3f21d86ed6bdaafb5df5972593bfc401"},
+    {file = "setuptools-69.1.1-py3-none-any.whl", hash = "sha256:02fa291a0471b3a18b2b2481ed902af520c69e8ae0919c13da936542754b4c56"},
+    {file = "setuptools-69.1.1.tar.gz", hash = "sha256:5c0806c7d9af348e6dd3777b4f4dbb42c7ad85b190104837488eab9a7c945cf8"},
 ]
 
 [package.extras]
 docs = ["furo", "jaraco.packaging (>=9.3)", "jaraco.tidelift (>=1.4)", "pygments-github-lexers (==0.0.5)", "rst.linker (>=1.9)", "sphinx (<7.2.5)", "sphinx (>=3.5)", "sphinx-favicon", "sphinx-inline-tabs", "sphinx-lint", "sphinx-notfound-page (>=1,<2)", "sphinx-reredirects", "sphinxcontrib-towncrier"]
-testing = ["build[virtualenv]", "filelock (>=3.4.0)", "flake8-2020", "ini2toml[lite] (>=0.9)", "jaraco.develop (>=7.21)", "jaraco.envs (>=2.2)", "jaraco.path (>=3.2.0)", "pip (>=19.1)", "pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-cov", "pytest-enabler (>=2.2)", "pytest-home (>=0.5)", "pytest-mypy (>=0.9.1)", "pytest-perf", "pytest-ruff (>=0.2.1)", "pytest-timeout", "pytest-xdist", "tomli-w (>=1.0.0)", "virtualenv (>=13.0.0)", "wheel"]
-testing-integration = ["build[virtualenv] (>=1.0.3)", "filelock (>=3.4.0)", "jaraco.envs (>=2.2)", "jaraco.path (>=3.2.0)", "packaging (>=23.1)", "pytest", "pytest-enabler", "pytest-xdist", "tomli", "virtualenv (>=13.0.0)", "wheel"]
+testing = ["build[virtualenv]", "filelock (>=3.4.0)", "flake8-2020", "ini2toml[lite] (>=0.9)", "jaraco.develop (>=7.21)", "jaraco.envs (>=2.2)", "jaraco.path (>=3.2.0)", "packaging (>=23.2)", "pip (>=19.1)", "pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-cov", "pytest-enabler (>=2.2)", "pytest-home (>=0.5)", "pytest-mypy (>=0.9.1)", "pytest-perf", "pytest-ruff (>=0.2.1)", "pytest-timeout", "pytest-xdist", "tomli-w (>=1.0.0)", "virtualenv (>=13.0.0)", "wheel"]
+testing-integration = ["build[virtualenv] (>=1.0.3)", "filelock (>=3.4.0)", "jaraco.envs (>=2.2)", "jaraco.path (>=3.2.0)", "packaging (>=23.2)", "pytest", "pytest-enabler", "pytest-xdist", "tomli", "virtualenv (>=13.0.0)", "wheel"]
 
 [[package]]
 name = "shandy-sqlfmt"
@@ -1251,13 +1254,13 @@ test = ["coverage", "pytest", "pytest-cov"]
 
 [[package]]
 name = "virtualenv"
-version = "20.25.0"
+version = "20.25.1"
 description = "Virtual Python Environment builder"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "virtualenv-20.25.0-py3-none-any.whl", hash = "sha256:4238949c5ffe6876362d9c0180fc6c3a824a7b12b80604eeb8085f2ed7460de3"},
-    {file = "virtualenv-20.25.0.tar.gz", hash = "sha256:bf51c0d9c7dd63ea8e44086fa1e4fb1093a31e963b86959257378aef020e1f1b"},
+    {file = "virtualenv-20.25.1-py3-none-any.whl", hash = "sha256:961c026ac520bac5f69acb8ea063e8a4f071bcc9457b9c1f28f6b085c511583a"},
+    {file = "virtualenv-20.25.1.tar.gz", hash = "sha256:e08e13ecdca7a0bd53798f356d5831434afa5b07b93f0abdf0797b7a06ffe197"},
 ]
 
 [package.dependencies]
@@ -1303,5 +1306,5 @@ sqlite = ["adbc-driver-sqlite"]
 
 [metadata]
 lock-version = "2.0"
-python-versions = ">=3.9,<4.0"
-content-hash = "9f8a830ba236c92d08a4c6376837004a47a0ec970e15bdc2be586360b07e99a2"
+python-versions = ">=3.9, <4.0"
+content-hash = "2925fde1259217c65f37ff1cded9651a5d06ca5be22ed435684536c0b6352022"

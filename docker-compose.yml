@@ -26,7 +26,7 @@ services:
     ports:
       - 31337:31337
     restart: unless-stopped
-       
+
 
 volumes:
   postgres-db-volume-test:

@@ -8,7 +8,7 @@ All notable changes to this project will be documented in this file.
 
 ### Chores
 
--   Relax pyarrow requirements from >=15.0 to >=14.0 
+-   Relax pyarrow requirements from >=15.0 to >=14.0
 
 ## [0.1.0] - 2024-02-24
 

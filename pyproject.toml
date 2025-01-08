@@ -16,7 +16,7 @@ adbc = "harlequin_adbc:HarlequinAdbcAdapter"
 
 [tool.poetry.dependencies]
 python = ">=3.9, <4.0"
-harlequin = ">=1.7"
+harlequin = ">=1.7,<3"
 adbc-driver-manager = ">=0.9.0"
 pyarrow = ">=14.0.0"
 

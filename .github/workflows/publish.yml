@@ -39,7 +39,7 @@ jobs:
         with:
           tag_name: v${{ steps.harlequin_adbc_version.outputs.harlequin_adbc_version }}
           target_commitish: main
-          token: ${{ secrets.HARLEQUIN_ADBC_RELEASE_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           body_path: CHANGELOG.md
           files: |
             LICENSE

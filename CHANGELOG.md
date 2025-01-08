@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [0.1.2] - 2025-01-08
+
 ## [0.1.1] - 2024-04-13
 
 ### Chores
@@ -16,7 +18,9 @@ All notable changes to this project will be documented in this file.
 
 -   Implement first working version of adapter
 
-[Unreleased]: https://github.com/TylerHillery/harlequin-adbc/compare/0.1.1...HEAD
+[Unreleased]: https://github.com/TylerHillery/harlequin-adbc/compare/0.1.2...HEAD
+
+[0.1.2]: https://github.com/TylerHillery/harlequin-adbc/compare/0.1.1...0.1.2
 
 [0.1.1]: https://github.com/TylerHillery/harlequin-adbc/compare/0.1.0...0.1.1
 

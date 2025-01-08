@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "harlequin-adbc"
-version = "0.1.1"
+version = "0.1.2"
 description = "A Harlequin adapter for ADBC drivers."
 authors = ["Tyler Hillery <tylerhillery@users.noreply.github.com>"]
 homepage = "https://harlequin.sh"

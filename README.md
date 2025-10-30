@@ -94,7 +94,7 @@ The Snowflake URI should be of one of the following formats:
 - `user[:password]@host:port/database/schema?account=user_account[&param1=value1&paramN=valueN]`
 - `host:port/database/schema?account=user_account[&param1=value1&paramN=valueN]`
 
-Check the [Snowflake ADBC Driver Docs](https://arrow.apache.org/adbc/main/driver/snowflake.html) for more details.
+Check the [Snowflake ADBC Driver Docs](https://arrow.apache.org/adbc/current/driver/snowflake.html) for more details.
 
 Example usage:
 
@@ -106,7 +106,7 @@ Example usage:
 
 `harlequin -P None -a adbc "grpc+tls://localhost:31337" --driver-type flightsql --db-kwargs-str "username=flight_username;password=flight_password;adbc.flight.sql.client_option.tls_skip_verify=true"`
 
-Check the [FlightSQL ADBC Driver Docs](https://arrow.apache.org/adbc/main/driver/flight_sql.html) for more details.
+Check the [FlightSQL ADBC Driver Docs](https://arrow.apache.org/adbc/current/driver/flight_sql.html) for more details.
 
 ### Postgres Driver
 

@@ -14,7 +14,7 @@ Due to the recency of its development, there is various level of functionality a
 
 I also recommend installing the extra adbc drivers for the databases you plan on connecting to otherwise you will have to download the driver yourself from another place and provide the `driver_path` as a cli argument. The driver path connection method hasn't been thoroughly test.
 
-If you don't install the driver but provide a `--drive-type` cli argument you will get an `ImportError`
+If you don't install the driver but provide a `--driver-type` cli argument you will get an `ImportError`
 
 ### Using pip
 

@@ -1,6 +1,6 @@
 # harlequin-adbc
 
-This repo provides the Harlequin adapter for [ADBC](https://arrow.apache.org/adbc/main/index.html) (arrow database connectivity).
+This repo provides the [Harlequin](https://harlequin.sh) adapter for [ADBC](https://arrow.apache.org/adbc) (Arrow Database Connectivity).
 
 ## Warning
 

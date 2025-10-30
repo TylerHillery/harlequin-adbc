@@ -63,7 +63,7 @@ You can open Harlequin with the ADBC adapter by selecting it with the `-a` optio
 
 ### Driver Type (preferred)
 
-When you use the --driver-type option it will try to dynamically use the driver package of the type selected `adbc-driver-{driver type}`. That is why it's crucial to also have that package also install in the virtual environment where Harlequin is installed.
+When you use the `--driver-type` option it will try to dynamically use the driver package of the type selected `adbc-driver-{driver type}`. That is why it's crucial to also have that package also install in the virtual environment where Harlequin is installed.
 
 - `--driver-type` with one of the following options
   - flightsql, postgresql, snowflake, sqlite, duckdb

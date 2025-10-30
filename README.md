@@ -112,7 +112,7 @@ Check the [FlightSQL ADBC Driver Docs](https://arrow.apache.org/adbc/current/dri
 
 The Postgres URI should be in the format of a [Postgres DSN](https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING):
 
-`harlequin -a postgres "postgres://my-user:my-pass@localhost:5432/my-database"`
+`harlequin -a adbc "postgres://my-user:my-pass@localhost:5432/my-database" --driver-type postgresql`
 
 ### DuckDB and SQLite
 
